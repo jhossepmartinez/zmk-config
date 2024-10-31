@@ -1,0 +1,140 @@
+#define HORIZONTAL_COMBO_SETTINGS \
+    timeout-ms = <18>; \
+    require-prior-idle-ms = <150>;
+#define VERTICAL_COMBO_SETTINGS \
+    timeout-ms = <30>; \
+    require-prior-idle-ms = <50>;
+/ {
+    combos {
+        compatible = "zmk,combos";
+        // Left: Horizontal Combos
+        combo_esc {
+            bindings = <&kp ESC>;
+            key-positions = <1 2>;
+            HORIZONTAL_COMBO_SETTINGS
+        };
+        combo_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <2 3>;
+            HORIZONTAL_COMBO_SETTINGS
+        };
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <11 12>;
+            HORIZONTAL_COMBO_SETTINGS
+        };
+        // Left: Vertical Combos
+        combo_at {
+            bindings = <&kp AT>;
+            key-positions = <1 11>;
+            VERTICAL_COMBO_SETTINGS
+        };
+        combo_hash {
+            bindings = <&kp HASH>;
+            key-positions = <2 12>;
+            VERTICAL_COMBO_SETTINGS
+        };
+        combo_dlr {
+            bindings = <&kp DLLR>;
+            key-positions = <3 13>;
+            VERTICAL_COMBO_SETTINGS
+        };
+        combo_prcnt {
+            bindings = <&kp PRCNT>;
+            key-positions = <4 14>;
+            VERTICAL_COMBO_SETTINGS
+        };
+        combo_grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <11 21>;
+            VERTICAL_COMBO_SETTINGS
+        };
+        combo_bslh {
+            bindings = <&kp BSLH>;
+            key-positions = <12 22>;
+            VERTICAL_COMBO_SETTINGS
+        };
+        combo_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <13 23>;
+            VERTICAL_COMBO_SETTINGS
+        };
+        combo_tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <14 24>;
+            VERTICAL_COMBO_SETTINGS
+        };
+        // Right: Horizontal Combos
+        combo_backspace {
+            bindings = <&kp BSPC>;
+            key-positions = <6 7>;
+            HORIZONTAL_COMBO_SETTINGS
+        };
+        combo_del {
+            bindings = <&kp DEL>;
+            key-positions = <7 8>;
+            HORIZONTAL_COMBO_SETTINGS
+        };
+        combo_lpar_lt {
+            bindings = <&lpar_lt>;
+            key-positions = <16 17>;
+            HORIZONTAL_COMBO_SETTINGS
+        };
+        combo_rpar_gt {
+            bindings = <&rpar_gt>;
+            key-positions = <17 18>;
+            HORIZONTAL_COMBO_SETTINGS
+        };
+        combo_lbkt {
+            bindings = <&kp LBKT>;
+            key-positions = <26 27>;
+            HORIZONTAL_COMBO_SETTINGS
+        };
+        combo_rbkt {
+            bindings = <&kp RBKT>;
+            key-positions = <27 28>;
+            HORIZONTAL_COMBO_SETTINGS
+        };
+        // Right: Vertical Combos
+        combo_caret {
+            bindings = <&kp CARET>;
+            key-positions = <5 15>;
+            VERTICAL_COMBO_SETTINGS
+        };
+        combo_plus {
+            bindings = <&kp PLUS>;
+            key-positions = <6 16>;
+            VERTICAL_COMBO_SETTINGS
+        };
+        combo_astrk {
+            bindings = <&kp ASTRK>;
+            key-positions = <7 17>;
+            VERTICAL_COMBO_SETTINGS
+        };
+        combo_amps {
+            bindings = <&kp AMPS>;
+            key-positions = <8 18>;
+            VERTICAL_COMBO_SETTINGS
+        };
+        combo_under {
+            bindings = <&kp UNDER>;
+            key-positions = <15 25>;
+            VERTICAL_COMBO_SETTINGS
+        };
+        combo_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <16 26>;
+            VERTICAL_COMBO_SETTINGS
+        };
+        combo_fslh {
+            bindings = <&kp FSLH>;
+            key-positions = <17 27>;
+            VERTICAL_COMBO_SETTINGS
+        };
+        combo_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <18 28>;
+            VERTICAL_COMBO_SETTINGS
+        };
+    };
+};
