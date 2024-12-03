@@ -42,7 +42,7 @@
     keymap {
         compatible = "zmk,keymap";
         default_layer {
-        bindings = <
+            bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  G       │   │  J       │  L       │  U       │  Y       │  ' "     │
             &kp Q      &kp W      &kp F      &kp P      &kp G          &kp J      &kp L      &kp U      &kp Y      &kp SQT
@@ -56,6 +56,7 @@
                                              &mo 2       &kp SHIFT     &kp SPACE  &mo 1
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
            >;
+        };
 
         right_layer {
             bindings = <
