@@ -34,12 +34,22 @@
         compatible = "zmk,combos,behavior-sticky-key";
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
+            timeout-ms = <50>;
+        };
+        combo_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <3 4>;
+            timeout-ms = <50>;
+        };
+        combo_backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 9>;
             timeout-ms = <50>;
         };
         combo_ctrl {
             bindings = <&sk LCTRL>;
-            key-positions = <1 2>;
+            key-positions = <17 18>;
             timeout-ms = <50>;
         };
     };
@@ -58,7 +68,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  K       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp K      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 TAB   &kp ENTER     &kp SPACE  &lt 1 BSPC
+                                            &mo 2       &kp SHIFT      &kp SPACE  &mo 1
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
     >;
         };
