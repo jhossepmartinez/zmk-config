@@ -47,11 +47,11 @@
             key-positions = <8 9>;
             timeout-ms = <50>;
         };
-        combo_ctrl {
-            bindings = <&sk LCTRL>;
-            key-positions = <17 18>;
-            timeout-ms = <50>;
-        };
+        // combo_ctrl {
+        //     bindings = <&sk LCTRL>;
+        //     key-positions = <17 18>;
+        //     timeout-ms = <50>;
+        // };
     };
 
     keymap {
