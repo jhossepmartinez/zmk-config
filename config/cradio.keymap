@@ -31,7 +31,7 @@
     };
 
     combos {
-        compatible = "zmk,combos,behavior-sticky-key";
+        compatible = "zmk,combos";
         combo_esc {
             bindings = <&kp ESC>;
             key-positions = <2 3>;
