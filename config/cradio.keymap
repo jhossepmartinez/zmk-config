@@ -31,25 +31,15 @@
     };
 
     combos {
-        compatible = "zmk,combos";
+        compatible = "zmk,combos,behavior-sticky-key";
         combo_esc {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
             timeout-ms = <50>;
         };
-        combo_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <2 3>;
-            timeout-ms = <50>;
-        };
-        combo_bspc {
-            bindings = <&kp BSPC>;
-            key-positions = <7 8>;
-            timeout-ms = <50>;
-        };
         combo_ctrl {
             bindings = <&sk LCTRL>;
-            key-positions = <18 19>;
+            key-positions = <1 2>;
             timeout-ms = <50>;
         };
     };
