@@ -36,8 +36,8 @@
             bindings = <&kp ESC>;
             key-positions = <1 2>;
             timeout-ms = <50>;
-        }
-    }
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
