@@ -34,22 +34,42 @@
         compatible = "zmk,combos";
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <2 3>;
+            key-positions = <1 2>;
             timeout-ms = <200>;
         };
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <3 4>;
+            key-positions = <2 3>;
             timeout-ms = <50>;
         };
         combo_backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <8 9>;
+            key-positions = <6 7>;
             timeout-ms = <50>;
         };
-        combo_ctrl {
-            bindings = <&sk LCTRL>;
-            key-positions = <17 18>;
+        combo_del {
+            bindings = <&kp DELETE>;
+            key-positions = <7 8>;
+            timeout-ms = <50>;
+        };
+        combo_left_tab {
+            bindings = <&kp TAB>;
+            key-positions = <3 4>;
+            timeout-ms = <50>;
+        };
+        combo_left_ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <13 14>;
+            timeout-ms = <50>;
+        };
+        combo_right_tab {
+            bindings = <&kp TAB>;
+            key-positions = <5 6>;
+            timeout-ms = <50>;
+        };
+        combo_right_ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <15 16>;
             timeout-ms = <50>;
         };
     };
@@ -63,18 +83,18 @@
             &kp Q      &kp W      &kp F      &kp P      &kp G          &kp J      &kp L      &kp U      &kp Y      &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  D       │   │  H       │  N       │  E       │  I       │  O       │
-            HRML(A,        R,         S,         T)     &kp D          &kp H      HRMR(N,        E,         I,        O)
+            &kp A      &kp R      &kp S      &kp T     &kp D          &kp H       &kp N      &kp E      &kp I      &kp O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  K       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp K      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &mo 2      &kp RSHIFT     &kp SPACE  &mo 1 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-    >;
+        >;
         };
 
         right_layer {
-            bindings = <
+        bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ INSERT   │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
             &kp INS    &kp N1     &kp N2     &kp N3     &trans         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
@@ -87,11 +107,11 @@
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-            >;
+        >;
         };
 
         left_layer {
-            bindings = <
+        bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │  [       │  {       │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
             &trans     &kp LBKT   &kp LBRC   &kp RBRC   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
@@ -104,11 +124,11 @@
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-            >;
+        >;
         };
 
         tri_layer {
-            bindings = <
+        bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
            &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans     &trans     &trans     &trans    &sys_reset
@@ -121,7 +141,7 @@
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-            >;
+        >;
         };
     };
 };
