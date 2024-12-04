@@ -62,6 +62,11 @@
             key-positions = <13 14>;
             timeout-ms = <50>;
         };
+        combo_left_gui {
+            bindings = <&kp LGUI>;
+            key-positions = <23 24>;
+            timeout-ms = <50>;
+        };
         combo_right_tab {
             bindings = <&kp TAB>;
             key-positions = <5 6>;
@@ -70,6 +75,11 @@
         combo_right_ctrl {
             bindings = <&kp LCTRL>;
             key-positions = <15 16>;
+            timeout-ms = <50>;
+        };
+        combo_right_gui {
+            bindings = <&kp LGUI>;
+            key-positions = <25 26>;
             timeout-ms = <50>;
         };
     };
