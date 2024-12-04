@@ -112,12 +112,13 @@
         //│          │          │  ` ~     │  - _     │  + =     │   │  ; :     │  [ {     │  ] }     │  \ |     │          │
             &trans     &trans     &kp GRAVE  &kp MINUS  &kp PLUS       &kp SEMI   &kp LBKT   &kp RBKT   &kp BSLH   &trans     
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-           &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &trans     &trans     &trans     &trans     &trans
+        //│          │          │          │          │          │   │          │          │          │          │          │
+            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC        &trans     &trans
+        //                                 │          │          │   │          │          │
+                                             &trans     &kp RSHIFT     &kp SPACE  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-        >;
+            >;
         };
 
         left_layer {
