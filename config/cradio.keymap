@@ -104,21 +104,20 @@
         };
 
         right_layer {
-            bindings = <
+        bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  7 &     │  5 %     │  3 #     │  1 !     │  9 (     │   │  8 *     │  0 )     │  2 @     │  4 $     │  6 ^     │
             &kp N7     &kp N5     &kp N3     &kp N1     &kp N9         &kp N8     &kp N0     &kp N2     &kp N4     &kp N6  
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │  ` ~     │  - _     │  + =     │   │  ; :     │  [ {     │  ] }     │  \ |     │          │
-            &trans     &trans     &kp GRAVE  &kp MINUS  &kp PLUS       &kp SEMI   &kp LBKT   &kp RBKT   &kp BLSH   &trans     
+        //│ DELETE   │  4       │  5       │  6       │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
+            &kp DEL    &kp N4     &kp N5     &kp N6     &trans         &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
+        //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
+           &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-        //                                 │          │          │   │          │          │
-                                             &trans     &kp RSHIFT     &kp SPACE  &trans
+                                             &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-            >;
+        >;
         };
 
         left_layer {
