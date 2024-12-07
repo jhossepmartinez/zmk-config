@@ -25,10 +25,10 @@
 
         triple_shift: mod_morph {
             compatible = "zmk,behavior-mod-morph";
-            bindings = <&ht>, <&caps_word>;
-            mods = <(MOD_LSFT)>;  // Left Shift Modifier
-            double-tap-delay-ms = <300>; // Adjust for double-tap detection
             #binding-cells = <0>;
+            bindings = <&ht>, <&caps_word>;
+            mods = <(MOD_LSFT)>;
+            double-tap-delay-ms = <300>;
         };
     };
 
