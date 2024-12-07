@@ -28,6 +28,7 @@
             bindings = <&ht>, <&caps_word>;
             mods = <(MOD_LSFT)>;  // Left Shift Modifier
             double-tap-delay-ms = <300>; // Adjust for double-tap detection
+            #binding-cells = <0>;
         };
     };
 
