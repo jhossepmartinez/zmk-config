@@ -27,6 +27,7 @@
             compatible = "zmk,behavior-mod-morph";
             bindings = <&sk LSHIFT>, <&caps_word>;
             mods = <(MOD_LSFT)>;
+            #binding-cells = <0>;
         };
     };
 
