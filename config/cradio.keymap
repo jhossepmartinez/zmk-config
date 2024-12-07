@@ -32,6 +32,13 @@
             mods = <(MOD_LSFT)>;
             #binding-cells = <0>;
         };
+
+        lpar_lt: lpar_lt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR>, <&kp LT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
     };
 
     conditional_layers {
@@ -44,6 +51,7 @@
 
     combos {
         compatible = "zmk,combos";
+
         // left horizontal combos
         combo_esc {
             bindings = <&kp ESC>;
@@ -61,18 +69,17 @@
             HORIZONTAL_COMBO_SETTINGS
         };
 
+        // right horizontal combos
         combo_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <6 7>;
-            timeout-ms = <18>;
-            require-prior-idle-ms = <150>;
+            HORIZONTAL_COMBO_SETTINGS
         };
-        // combo_del {
-        //     bindings = <&kp DELETE>;
-        //     key-positions = <7 8>;
-        //     timeout-ms = <18>;
-        //     require-prior-idle-ms = <150>;
-        // };
+        combo_del {
+            bindings = <&kp DELETE>;
+            key-positions = <7 8>;
+            HORIZONTAL_COMBO_SETTINGS
+        };
         // combo_left_tab {
         //     bindings = <&kp TAB>;
         //     key-positions = <3 4>;
