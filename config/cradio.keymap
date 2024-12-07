@@ -25,19 +25,9 @@
 
         triple_shift: mod_morph {
             compatible = "zmk,behavior-mod-morph";
-            bindings = <&sticky_shift>, <&caps_word>;
+            bindings = <&ht>, <&caps_word>;
             mods = <(MOD_LSFT)>;  // Left Shift Modifier
             double-tap-delay-ms = <300>; // Adjust for double-tap detection
-        };
-
-        sticky_shift: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            flavor = "balanced";
-            quick-tap-ms = <150>;
-            require-prior-idle-ms = <100>;
-            bindings = <&kp LSFT>, <&kp LSFT>;
-            #binding-cells = <2>;
-            hold-trigger-on-release;
         };
     };
 
