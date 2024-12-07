@@ -85,7 +85,6 @@
             key-positions = <16 17>;
             HORIZONTAL_COMBO_SETTINGS
         };
-        }
         // combo_left_tab {
         //     bindings = <&kp TAB>;
         //     key-positions = <3 4>;
