@@ -44,7 +44,7 @@
 
     combos {
         compatible = "zmk,combos";
-        // Horizontal left combos
+        // left horizontal combos
         combo_esc {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
@@ -53,8 +53,11 @@
         combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <2 3>;
-            timeout-ms = <18>;
-            require-prior-idle-ms = <150>;
+            HORIZONTAL_COMBO_SETTINGS
+        };
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <6 7>;
             HORIZONTAL_COMBO_SETTINGS
         };
 
