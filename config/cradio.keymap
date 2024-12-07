@@ -11,14 +11,17 @@
 
 / {
     behaviors {
+
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <220>;
+            flavor = "balanced";
             quick-tap-ms = <150>;
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
+            #binding-cells = <2>;
+            hold-trigger-on-release;
+            flavor = "tap-preferred";
+            tapping-term-ms = <220>;
         };
     };
 
