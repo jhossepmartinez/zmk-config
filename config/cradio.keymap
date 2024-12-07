@@ -14,13 +14,12 @@
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             flavor = "balanced";
-            quick-tap-ms = <150>;
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
             #binding-cells = <2>;
             hold-trigger-on-release;
-            flavor = "tap-preferred";
-            tapping-term-ms = <220>;
         };
 
         triple_shift: mod_morph {
@@ -28,6 +27,7 @@
             bindings = <&sk LSHIFT>, <&caps_word>;
             mods = <(MOD_LSFT)>;
             #binding-cells = <0>;
+            require-prior-idle-ms = <150>;
         };
     };
 
