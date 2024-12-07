@@ -71,12 +71,12 @@
 
         // right horizontal combos
         combo_backspace {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp BSPC>;
             key-positions = <6 7>;
             HORIZONTAL_COMBO_SETTINGS
         };
         combo_del {
-            bindings = <&kp DELETE>;
+            bindings = <&kp DEL>;
             key-positions = <7 8>;
             HORIZONTAL_COMBO_SETTINGS
         };
