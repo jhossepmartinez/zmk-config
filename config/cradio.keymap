@@ -80,6 +80,12 @@
             key-positions = <7 8>;
             HORIZONTAL_COMBO_SETTINGS
         };
+        combo_lpar_lt {
+            bindings = <&lpar_lt>;
+            key-positions = <16 17>;
+            HORIZONTAL_COMBO_SETTINGS
+        };
+        }
         // combo_left_tab {
         //     bindings = <&kp TAB>;
         //     key-positions = <3 4>;
