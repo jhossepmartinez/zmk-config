@@ -11,7 +11,6 @@
 
 / {
     behaviors {
-
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             flavor = "balanced";
@@ -22,6 +21,23 @@
             hold-trigger-on-release;
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
+        };
+
+        triple_shift: mod_morph {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&sticky_shift>, <&caps_word>;
+            mods = <(MOD_LSFT)>;  // Left Shift Modifier
+            double-tap-delay-ms = <300>; // Adjust for double-tap detection
+        };
+
+        sticky_shift: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <100>;
+            bindings = <&kp LSFT>, <&kp LSFT>;
+            #binding-cells = <2>;
+            hold-trigger-on-release;
         };
     };
 
@@ -101,7 +117,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  K       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp K      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &mo 2      &kp RSHIFT     &kp SPACE  &mo 1 
+                                             &kp SPACE  &kp 2          &mo 1      &triple_shift 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
         >;
         };
