@@ -38,7 +38,7 @@
             #binding-cells = <0>;
             bindings = <&kp LPAR>, <&kp LT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        }
+        };
     };
 
     conditional_layers {
