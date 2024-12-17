@@ -232,7 +232,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  K       │  M       │ , ;      │ . :      │  ! ?     │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp K      &kp M     &comma_semi &dot_colon &excl_qmark
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &lt 2 SPACE  &lt 3 ENTER  &mo 1      &triple_shift 
+                                             &lt 2 SPACE  &lt 3 RET    &mo 1      &triple_shift 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
         >;
         };
@@ -250,7 +250,7 @@
             &trans     &kp N1     &kp N2     &kp N3     &trans         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                 │          │          │   │          │          │
-                                             &kp SPACE  &kp ENTER      &trans     &trans
+                                             &trans     &trans        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
         >;
         };
@@ -258,14 +258,14 @@
         nav_layer {
         bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &kp UP     &trans     &trans
+        //│          │          │          │          │          │   │          │  BSPC    │  UP      │  DEL     │          │
+            &trans     &trans     &trans     &trans     &trans         &trans     &kp bspc   &kp UP     &kp DEL    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans
+        //│          │          │          │          │          │   │          │  LEFT    │  DOWN    │  RIGHT   │  ENTER   │
+            &trans     &trans     &trans     &trans     &trans         &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &kp RET
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
+        //│          │          │          │          │          │   │          │  TAB     │          │          │          │
+            &trans     &trans     &trans     &trans     &trans         &trans     &kp TAB    &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &kp ESC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -285,7 +285,7 @@
             &kp F10    &kp F1     &kp F2     &kp F3     &trans         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                 │          │          │   │          │          │
-                                             &kp SPACE  &kp ENTER      &trans     &trans
+                                             &trans     &trans      &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
         >;
         };
