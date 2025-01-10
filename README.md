@@ -1,4 +1,4 @@
-### Jhossep's Ferris Sweep zmk config
+## Jhossep's Ferris Sweep zmk config
 
 My configuration for the Ferris Sweep, highly inspired by urob's zmk config.
 
