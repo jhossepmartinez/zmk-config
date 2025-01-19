@@ -226,7 +226,9 @@
         };
 
         alt_shift_tab: alt_shift_tab {
-            bindings = <&macro_press &kp LALT &kp LSHIFT &kp TAB>;
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT &kp LSHIFT>, <&macro_tap &kp TAB>, <&macro_release &kp LALT &kp LSHIFT>;
         };
     };
 
