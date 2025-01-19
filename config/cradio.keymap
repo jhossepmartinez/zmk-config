@@ -220,6 +220,8 @@
 
     macros {
         alt_tab: macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings = <&macro_press &kp LALT &kp TAB>;
         };
     };
