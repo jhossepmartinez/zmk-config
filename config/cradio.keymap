@@ -224,6 +224,10 @@
             #binding-cells = <0>;
             bindings = <&macro_press &kp LALT &kp TAB>;
         };
+
+        alt_shift_tab: macro {
+            bindings = <&macro_press &kp LALT &kp LSHIFT &kp TAB>;
+        };
     };
 
     keymap {
