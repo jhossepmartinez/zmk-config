@@ -218,6 +218,12 @@
         };
     };
 
+    macros {
+        alt_tab: macro {
+            bindings = <&macro_press &kp LALT &kp TAB>;
+        }
+    }
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
@@ -259,7 +265,7 @@
         bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &kp UP     &trans     &trans         &trans     &trans     &kp UP     &trans     &trans
+            &trans     &trans     &kp UP     &alt_tab   &trans         &trans     &trans     &kp UP     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans         &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &kp ENTER
