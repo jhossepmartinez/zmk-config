@@ -225,7 +225,7 @@
             bindings = <&macro_press &kp LALT &kp TAB>;
         };
 
-        alt_shift_tab: alt_tab {
+        alt_shift_tab: alt_shift_tab {
             bindings = <&macro_press &kp LALT &kp LSHIFT &kp TAB>;
         };
     };
