@@ -219,13 +219,13 @@
     };
 
     macros {
-        alt_tab: macro {
+        alt_tab: alt_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press &kp LALT &kp TAB>;
         };
 
-        alt_shift_tab: macro {
+        alt_shift_tab: alt_tab {
             bindings = <&macro_press &kp LALT &kp LSHIFT &kp TAB>;
         };
     };
