@@ -219,13 +219,13 @@
     };
 
     macros {
-        alt_tab: alt_tab {
+        alt_tab: nwin {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press &kp LALT>, <&macro_tap &kp TAB>, <&macro_release &kp LALT>;
         };
 
-        alt_shift_tab: alt_shift_tab {
+        alt_shift_tab: pwin {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press &kp LALT &kp LSHIFT>, <&macro_tap &kp TAB>, <&macro_release &kp LALT &kp LSHIFT>;
@@ -273,7 +273,7 @@
         bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans &alt_shift_tab &kp UP     &alt_tab   &trans         &trans     &trans     &kp UP     &trans     &trans
+            &trans     &pwin      &kp UP     &nwin      &trans         &trans     &trans     &kp UP     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans         &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &kp ENTER
