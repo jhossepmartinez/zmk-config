@@ -233,7 +233,7 @@
 
         win_num: win_num {
             compatible = "zmk,behavior-macro";
-            bindings = <&ht LGUI &kp A>
+            bindings = <&ht LGUI &kp A>;
         }
     };
 
