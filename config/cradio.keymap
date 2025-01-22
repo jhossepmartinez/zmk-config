@@ -233,8 +233,8 @@
 
         win_num: win_num {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&ht LGUI &kp A>;
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1>, <&ht LGUI &kp A>;
         };
     };
 
