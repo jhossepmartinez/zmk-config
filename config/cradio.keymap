@@ -232,7 +232,7 @@
         };
 
         win_num: win_num {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <0>;
             bindings = <&macro_param_1to1>, <&ht LGUI &kp A>;
         };
