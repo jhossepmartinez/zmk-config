@@ -374,7 +374,7 @@
             &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                 │          │          │   │          │          │
-                                             &kp LSHIFT &trans         &trans     &trans
+                                             &kp SPACE  &kp LSHIFT     &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
         >;
         };
