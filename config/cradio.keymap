@@ -329,7 +329,7 @@
         bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ F12      │ F7       │ F8       │ F9       │          │   │          │          │          │          │          │
-            &trans     &kp F7     &kp F8     &kp F9     &trans         &trans     &trans     &trans     &trans     &trans  
+            &kp F12    &kp F7     &kp F8     &kp F9     &trans         &trans     &trans     &trans     &trans     &trans  
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ F11      │ F4       │ F5       │ F6       │          │   │          │          │          │          │          │
             &kp F11    &kp F4     &kp F5     &kp F6     &trans         &trans     &trans     &trans     &trans     &trans     
