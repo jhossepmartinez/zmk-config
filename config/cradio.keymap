@@ -314,7 +314,7 @@
             &tog 5     &trans     &trans     &pwin      &nwin          &trans  &lm LGUI N7 &lm LGUI N8 &lm LGUI N9 &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT      &lm LGUI K  &lm LGUI N4 &lm LGUI N5 &lm LGUI N6 &trans
+            &trans     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT      &lm LGUI D  &lm LGUI N4 &lm LGUI N5 &lm LGUI N6 &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &trans     &trans     &trans     &trans     &trans         &trans  &lm LGUI N1 &lm LGUI N2 &lm LGUI N3 &trans
