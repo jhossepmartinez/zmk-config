@@ -365,13 +365,13 @@
         bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &tog 5     &kp Q      &kp W      &kp E      &kp R          &trans     &trans     &trans     &trans     &trans
+            &trans     &kp Q      &kp W      &kp E      &kp R          &trans     &kp N7     &kp N8     &kp N9     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &kp LSHIFT &kp A      &kp S      &kp D      &kp F          &trans     &trans     &trans     &trans     &trans          
+            &kp LSHIFT &kp A      &kp S      &kp D      &kp F          &kp N0     &kp N4     &kp N5     &kp N6     &trans          
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &kp LSHIFT &trans         &trans     &trans     &trans     &trans     &trans
+            &tog 5     &trans     &trans     &kp LSHIFT &trans         &trans     &kp N1     &kp N2     &kp N3     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                 │          │          │   │          │          │
                                              &kp SPACE  &kp LSHIFT     &trans     &trans
