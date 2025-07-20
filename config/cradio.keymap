@@ -242,13 +242,11 @@
             #binding-cells = <0>;
             bindings = <&macro_press &kp LALT>, <&macro_tap &kp TAB>, <&macro_release &kp LALT>;
         };
-
         pwin: pwin {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press &kp LALT &kp LSHIFT>, <&macro_tap &kp TAB>, <&macro_release &kp LALT &kp LSHIFT>;
         };
-
         lm: lm {
             compatible = "zmk,behavior-macro-two-param";
             wait-ms = <0>;
@@ -265,6 +263,11 @@
                 , <&macro_param_2to1>
                 , <&macro_release &kp MACRO_PLACEHOLDER>
                 ;
+        };
+        sshot: sshot {
+            compatible = "zmk,behavior-shot";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LWIN &kp LSHIFT &kp S>, <&macro_release &kp LWIN &kp LSHIFT &kp S>;
         };
     };
 
