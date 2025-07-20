@@ -313,8 +313,8 @@
         nav_layer {
         bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │  PWIN    │  NWIN    │   │          │          │          │          │          │
-            &trans     &trans     &trans     &pwin      &nwin          &trans  &lm LGUI N7 &lm LGUI N8 &lm LGUI N9 &trans
+        //│          │  SSHOT   │          │  PWIN    │  NWIN    │   │          │          │          │          │          │
+            &trans     &sshot     &trans     &pwin      &nwin          &trans  &lm LGUI N7 &lm LGUI N8 &lm LGUI N9 &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &trans     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT   &lm LGUI D &lm LGUI N4 &lm LGUI N5 &lm LGUI N6 &trans
@@ -355,7 +355,7 @@
         //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
           &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
+        //│ZMK STUDIO│          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
           &studio_unlock &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                 │          │          │   │          │          │
