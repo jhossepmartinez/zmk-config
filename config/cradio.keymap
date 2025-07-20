@@ -265,7 +265,7 @@
                 ;
         };
         sshot: sshot {
-            compatible = "zmk,behavior-shot";
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press &kp LWIN &kp LSHIFT &kp S>, <&macro_release &kp LWIN &kp LSHIFT &kp S>;
         };
