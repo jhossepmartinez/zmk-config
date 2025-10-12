@@ -122,6 +122,13 @@
                 , <&macro_release &kp LWIN &kp LSHIFT &kp S>
                 ;
         };
+        win_sleep: win_sleep {
+            wait-ms = <50>;
+            tap-ms = <5>;
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(X) &kp U &kp S>;
+        };
     };
     keymap {
         compatible = "zmk,keymap";
@@ -147,10 +154,10 @@
             bindings = <
             //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
             //│ F12      │ F7       │ F8       │ F9       │          │   │          │          │          │          │          │
-                &kp F12    &kp F7     &kp F8     &kp F9     &trans        &trans &kp C_BRI_DN &kp C_BRI_UP  &trans     &trans  
+                &kp F12    &kp F7     &kp F8     &kp F9     &trans         &win_sleep &kp C_BRI_DN &kp C_BRI_UP  &trans     &trans  
             //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             //│ F11      │ F4       │ F5       │ F6       │          │   │          │          │          │          │          │
-                &kp F11    &kp F4     &kp F5     &kp F6     &trans        &trans &kp C_VOL_DN &kp C_VOL_UP  &kp C_MUTE &trans     
+                &kp F11    &kp F4     &kp F5     &kp F6     &trans         &trans     &kp C_VOL_DN &kp C_VOL_UP  &kp C_MUTE &trans     
             //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             //│ F10      │ F1       │ F2       │ F3       │          │   │          │          │          │          │          │
                 &kp F10    &kp F1     &kp F2     &kp F3     &trans         &trans     &trans     &trans     &trans     &trans
@@ -170,7 +177,7 @@
                 &trans     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT      &pwin D    &pwin N4   &pwin N5   &pwin N6   &trans
             //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             //│          │          │          │          │          │   │          │          │          │          │          │
-                &to 4     &trans     &trans     &trans     &trans         &trans     &pwin N1   &pwin N2   &pwin N3   &trans
+                &to 4      &trans     &trans     &trans     &trans         &trans     &pwin N1   &pwin N2   &pwin N3   &trans
             //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
             //                                 │          │          │   │          │          │
                                                  &trans     &trans         &trans     &trans
