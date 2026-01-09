@@ -13,6 +13,13 @@
 #define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29
 #define THUMBS 30 31 32 33
 
+#define NUMBER 5
+#define GAME 4
+#define TRI 3
+#define NAV 2
+#define FUNC 1
+#define DEFAULT 0
+
 #include "combos.dtsi"
 
 / {
@@ -79,8 +86,8 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <1 5>;
-            then-layer = <3>;
+            if-layers = <FUNC NUMBER>;
+            then-layer = <TRI>;
         };
     };
     macros {
@@ -145,7 +152,7 @@
                 &kp Z      &kp X      &kp C      &kp V      &kp B          &kp K      &kp M     &comma_semi &dot_colon &excl_qmark
             //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
             //                                 │          │          │   │          │          │
-                                             &lt 2 SPACE    &lt 1 ENTER    &mo 5      &triple_shift
+                                           &lt NAV SPACE &lt NUMBER ENTER  &mo FUNC   &triple_shift
             //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
