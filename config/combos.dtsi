@@ -136,5 +136,18 @@
             key-positions = <18 28>;
             VERTICAL_COMBO_SETTINGS
         };
+        // Toggle layers
+        combo_to_gaming_from_default {
+            key-positions = <3 14>;
+            bindings = <&to 4>;
+            layers = <0>;
+            VERTICAL_COMBO_SETTINGS
+        };
+        combo_to_default_from_gaming {
+            key-positions = <3 14>;
+            bindings = <&to 0>;
+            layers = <4>;
+            VERTICAL_COMBO_SETTINGS
+        };
     };
 };

@@ -177,7 +177,7 @@
                 &trans     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT      &pwin D    &pwin N4   &pwin N5   &pwin N6   &trans
             //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             //│          │          │          │          │          │   │          │          │          │          │          │
-                &to 4      &trans     &trans     &trans     &trans         &trans     &pwin N1   &pwin N2   &pwin N3   &trans
+                &trans     &trans     &trans     &trans     &trans         &trans     &pwin N1   &pwin N2   &pwin N3   &trans
             //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
             //                                 │          │          │   │          │          │
                                                  &trans     &trans         &trans     &trans
@@ -214,7 +214,7 @@
                 &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
             //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
             //                                 │          │          │   │          │          │
-                                                 &kp SPACE  &kp LSHIFT     &mo 5      &to 0
+                                                 &kp SPACE  &kp LSHIFT     &mo 5      &trans
             //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
