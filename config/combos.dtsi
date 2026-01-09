@@ -140,13 +140,13 @@
         combo_to_gaming_from_default {
             key-positions = <3 14>;
             bindings = <&to GAME>;
-            layers = <0>;
+            layers = <DEFAULT>;
             VERTICAL_COMBO_SETTINGS
         };
         combo_to_default_from_gaming {
             key-positions = <3 14>;
             bindings = <&to DEFAULT>;
-            layers = <4>;
+            layers = <GAME>;
             VERTICAL_COMBO_SETTINGS
         };
     };
