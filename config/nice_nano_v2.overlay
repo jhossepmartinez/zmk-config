@@ -1,0 +1,19 @@
+/ {
+    /* Override battery sensing for SuperMini/ProMicro nRF52840 clones.
+     * These boards use an external voltage divider instead of the
+     * nice!nano v2's direct VDDH measurement.
+     *
+     * Voltage divider: 806K (top) + 2M (bottom) on P0.31 (AIN7)
+     *
+     * If battery still reads incorrectly, try changing:
+     *   io-channels = <&adc 7>;  ->  io-channels = <&adc 2>;
+     * (AIN2 = P0.04, used by some clones)
+     */
+    vbatt: vbatt {
+        compatible = "zmk,battery-voltage-divider";
+        label = "BATTERY";
+        io-channels = <&adc 1>;
+        output-ohms = <2000000>;
+        full-ohms = <(2000000 + 806000)>;
+    };
+};
